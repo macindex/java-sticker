@@ -20,7 +20,9 @@ public class JsonParser {
         String[] items = matcher.group(1).split("\\},\\{");
 
         List<Map<String, String>> dados = new ArrayList<>();
-
+        
+        // Exibir e manipular os dados
+        
         for (String item : items) {
 
             Map<String, String> atributosItem = new HashMap<>();
@@ -36,6 +38,9 @@ public class JsonParser {
         }
 
         return dados;
+        // System.out.println(dados.size());
+        // System.out.println(dados.get(index:0));
+        // System.out.println(filme.get(key:"title"));
     } 
 
 }
